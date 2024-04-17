@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice JS</title>
+    <style>
+      body {
+        background-color: black;
+        font-family: sans-serif;
+      }
+      #time {
+        color: aqua;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 4rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      p {
+        font-size: 3rem;
+      }
+      span {
+        font-size: 2rem;
+      }
+      h1 {
+        text-align: center;
+        color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Digital Watch</h1>
+    <div id="time">
+      <div>
+        <span>Seconds</span>
+        <p id="sec">0</p>
+      </div>
+      <div>
+        <span>Minutes</span>
+        <p id="min">0</p>
+      </div>
+      <div>
+        <span>Hours</span>
+        <p id="hours"></p>
+      </div>
+    </div>
+    <!-- <script src="app.js"></script> -->
+    <!-- <script src="chap1T020.js"></script> -->
+    <script src="digitalWatch.js"></script>
+  </body>
+</html>
+
+<!-- let comingDateTime = new Date(prompt("Enter your upcoming/past date and time in format MM/DD/YYYY HH:MM")).getTime();
+let currentDateTime = new Date(prompt("Enter your current date and time in format MM/DD/YYYY HH:MM")).getTime();
+
+let timeDifference = comingDateTime - currentDateTime;
+
+let years = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 365));
+let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+
+document.write("Years: " + years + "<br>");
+document.write("Days: " + days + "<br>");
+document.write("Hours: " + hours + "<br>");
+document.write("Minutes: " + minutes); -->
