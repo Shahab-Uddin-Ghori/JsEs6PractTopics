@@ -3,14 +3,14 @@
 // slice hamai exract kr k deta hai value ek range me isky 2 parameter hoty hai starting or End.
 // mtlb kha se hamain exract start krna hai end mtlb kha tak krna hai
 //  agar ham index 1 karty hai to wo 1 index ko bhi pic kry ga or 4 end rkhty hai to 4 index ko  pic nhi kry ga IMP index hamsesha 0 se start hoti hai
-
-// indeox of agar kisi asy element in index of check kr rhy ho jo hy hi nhi to wo ** -1 ** ayeggi..
+// slice = index,lenght (or lenght 1 se start hoti hai.)
+// indexof  agar kisi asy element ki index of check kr rhy ho jo hy hi nhi to wo ** -1 ** ayeggi..
 console.log("\t\t\tLearning Slice");
 let arr5 = ["Khan", "mugal", "Ghori", "Jutt"];
 console.log(arr5);
 console.log(arr5.slice(1, 4)); //
 console.log(arr5.indexOf("Khan"));
-console.log(arr5.indexOf("han"));
+console.log(arr5.indexOf("han"));// ye index nhi hai to -1 return kryga..
 
 // slice me agar hamai last se num extract krnaho to ham -1 likhty hai
 console.log(arr5.slice(-1));
@@ -33,7 +33,7 @@ let testSlice = [
 ];
 console.log(testSlice);
 
-//   checking lenght of index // mtlb indexme kitny no of element hai index hamesha 0 se start hongi
+//   checking lenght of index // mtlb index me kitny no of element hai index hamesha 0 se start hongi
 
 console.log(testSlice.length); // 13 element hai 0 to 12 first element 0 index pr or last 12 index pr
 
@@ -45,7 +45,7 @@ console.log(testSlice.slice(0, 10)); // 10 index extract ki 0 se 9 tk.. as we kn
 
 //                                    ***Splice***
 //  Spilce Method Array me add,Remove and Replacing krny k liye hota hai means array k content ko ham apni marzi se change kr sakty hai...
-//    isky 3 parameters hoty hai.. start , Delete Count(kitny array k  elemts ko delete krna hai), jo content remove/replace krna hai wo likhty hai.. last add krny ka parameter
+//    isky 3 parameters hoty hai.. start , Delete Count(kitny array k  elemts ko delete krna hai), jo content remove/replace krna hai wo likhty hai.. last add krny ka parameter h
 
 // here some Details
 // start: The index at which to start changing the array. If greater than the length of the array, start will be set to the length of the array. If negative, it will begin that many elements from the end of the array. If negative, start will be set to 0.
@@ -141,7 +141,7 @@ for ( let i =44; i<=68; i=i+2 ){
 
 for(let i=1; i<=5; i++){
     let line=""
-    for(let j = 1; j<=i; j++ ){
+    for(let j = 1; j<=i; j++){
      line +=j;
     }
     console.log(line);
